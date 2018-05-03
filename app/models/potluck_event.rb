@@ -1,0 +1,2 @@
+class PotluckEvent < ApplicationRecord
+end
