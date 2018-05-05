@@ -1,2 +1,0 @@
-class PotluckController < ApplicationController
-end

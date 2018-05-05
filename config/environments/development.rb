@@ -31,6 +31,9 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  # Allow subdomaining
+  config.action_dispatch.tld_length = 0
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
