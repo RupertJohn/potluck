@@ -8,7 +8,8 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import Vue from 'vue/dist/vue.esm'
-import App from '../app.vue'
+import store from './vuex/index.js'
+import App from './components/home/app.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
@@ -17,7 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
       message: "Can you say hello?"
     },
     components: { App }
-  })
+  });
 })
-//
-// console.log('Hello World from Webpacker')
