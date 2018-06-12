@@ -9,15 +9,15 @@
 
 import Vue from 'vue/dist/vue.esm'
 import store from './vuex/index.js'
-import App from './components/home/app.vue'
+import router from './routes.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     el: '#potluck',
+    router,
     store,
     data: {
       message: "Can you say hello?"
-    },
-    components: { App }
+    }
   });
 })

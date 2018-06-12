@@ -7,4 +7,6 @@ Rails.application.routes.draw do
       resources :dish
     end
   end
+
+  match '*path', to: 'default#index', format: false, via: :get
 end
